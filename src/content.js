@@ -5,8 +5,8 @@ export const PRODUCT = 'Transaction Intent Security Layer';
 
 export const NAV = [
   { label: 'Demo', href: '#demo', active: true },
+  { label: 'Core Flow', href: '#flow' },
   { label: 'Features', href: '#features' },
-  { label: 'Flow', href: '#flow' },
   { label: 'FAQs', href: '#faqs' },
 ];
 
@@ -17,13 +17,13 @@ export const HERO = {
 
 export const ENGINE = {
   title: 'Intent Engine',
-  body: 'Wallets often show transaction data without explaining its real-world effect. The intent engine converts raw calldata and contract interactions into a clear, human-readable action summary — and outputs structured data so wallets and apps can render their own UI.',
+  body: 'Transaction → Decoder → Intent Engine → Security Rules → Result. Raw calldata becomes a clear, human-readable action summary, returned as structured data for any wallet or app.',
   stages: ['Transaction', 'Decoder', 'Intent Engine', 'Security Rules', 'Result'],
 };
 
 export const FLOW = {
   title: 'Core Flow',
-  body: 'The user submits or previews a transaction. The system decodes it, identifies the intended actions, explains them in plain language and checks them against security rules.',
+  body: 'Every transaction is decoded, its intended actions identified, explained in plain language and checked against security rules.',
   cards: [
     { num: '01', title: 'Decode', desc: 'Decodes the transaction and every associated contract call' },
     { num: '02', title: 'Identify', desc: 'Identifies the intended actions behind the calldata' },
@@ -39,7 +39,7 @@ export const DEMO = {
 
 export const BENTO = {
   title: ['Decode. Explain.', 'Protect.'],
-  body: "Not a replacement for wallet simulation. It's the interpretation and security layer sitting between raw transaction data and the user's approval decision.",
+  body: "Not a replacement for wallet simulation — the interpretation and security layer between raw transaction data and the user's approval.",
   slides: [
     { title: 'Transaction Decoded', sub: 'Raw calldata and contract calls, parsed.' },
     { title: 'Intent Identified', sub: 'The intended actions, named in plain language.' },
@@ -55,7 +55,7 @@ export const BENTO = {
 
 export const FEATURES = {
   title: 'Features',
-  body: 'The first version focuses on EVM transactions: decoding, detection and human-readable intent summaries with basic risk flags.',
+  body: 'An MVP focused on EVM transactions: decoding, detection, human-readable intent and basic risk flags.',
   tabs: ['Decoding', 'Transfers', 'Permissions', 'Risk Flags', 'Integration'],
 };
 
@@ -74,13 +74,13 @@ export const SEE = {
 
 export const WHY = {
   title: `Why ${BRAND}`,
-  copy: "Don't just show users what they're signing. Show them what it actually does. Instead of approve(address, 0xffff…), a user reads: you're giving this contract permission to spend your USDC.",
+  copy: "Don't just show users what they're signing. Show them what it actually does — before a single signature is given.",
   bg: `${BRAND.toUpperCase()} DECODES RAW CALLDATA, IDENTIFIES THE INTENDED ACTIONS, CHECKS THEM AGAINST SECURITY RULES AND SHOWS WHAT A TRANSACTION ACTUALLY DOES BEFORE ANYONE SIGNS IT. `,
 };
 
 export const BUILDERS = {
   title: ['Built For', 'Builders'],
-  body: 'One API endpoint for wallets, apps and interfaces. The engine returns structured data, so every team can render intent in its own UI.',
+  body: 'One API endpoint for wallets, apps and interfaces, returning structured intent every team can render in its own UI.',
   cards: [
     { kind: 'wallet', bg: '#3b9a66', pal: ['#0f1512', '#1d2a22', '#2f4a39', '#8fd0a8', '#e9f5ee'], q: 'Show a concise approval screen with the detected intent and warnings before every signature.', who: 'For wallets', big: 'API', lbl: 'Endpoint for wallets' },
     { kind: 'app', bg: '#0c0b0b', pal: ['#1d1a19', '#3a302c', '#7a5a3f', '#d6a36b', '#f6e3c8'], q: 'Explain every contract interaction your app requests in plain language users understand.', who: 'For apps', big: 'JSON', lbl: 'Structured intent output' },

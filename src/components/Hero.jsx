@@ -1,6 +1,6 @@
 import Art from './Art';
 import { Corner } from './Icons';
-import { heroEye } from '../art/art';
+import { heroSubject } from '../art/art';
 import { BRAND, PRODUCT, HERO } from '../content';
 
 export default function Hero() {
@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
       <div className="hero-right">
         <Corner className="corner-icon" />
-        <div className="hero-art"><Art draw={heroEye} fps={15} label="Pixel illustration of an eye scanning a transaction" /></div>
+        <div className="hero-art"><Art draw={heroSubject} fps={12} label="Pixel illustration of a hand holding a phone showing a transaction approval screen" /></div>
       </div>
     </section>
   );

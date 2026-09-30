@@ -11,9 +11,6 @@ export default function Engine() {
       <div className="engine-banner reveal d2">
         <Art draw={engineBars} fps={24} />
         <Corner className="corner-icon" />
-        <div className="engine-stages">
-          {ENGINE.stages.map((s, i) => <span key={s}>{s}<em>{i < ENGINE.stages.length - 1 ? '→' : '✓'}</em></span>)}
-        </div>
       </div>
     </section>
   );

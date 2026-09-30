@@ -5,8 +5,8 @@ const base = (size, sw = 1.6) => ({
 
 export const Logo = ({ size = 36 }) => (
   <svg width={size} height={size} viewBox="0 0 36 36" aria-hidden="true">
-    <path d="M7 6h9v4h-5v16h5v4H7z M29 6h-9v4h5v16h-5v4h9z" fill="currentColor" />
-    <rect x="15.5" y="15.5" width="5" height="5" fill="currentColor" />
+    <path d="M4 2h11v5H9v22h6v5H4z M32 2H21v5h6v22h-6v5h11z" fill="currentColor" />
+    <rect x="14.5" y="14.5" width="7" height="7" fill="currentColor" />
   </svg>
 );
 export const Corner = (p) => (<svg {...base(16, 1.3)} {...p}><rect x="3.5" y="3.5" width="17" height="17" rx="1" /><path d="M10 14 17 7M12 7h5v5" /></svg>);
